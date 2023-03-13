@@ -37,7 +37,7 @@ namespace MileCalculation.Api.Controllers
 
             var result = Math.Ceiling((MileCalculator.CalculateMile(iata1Coordiante, iata2Coordiante)));
 
-            return Ok($"The distance between SAW and ADB is {result} Miles");
+            return Ok($"The distance between {iataCode1} and {iataCode2} is {result} Miles");
         }
     }
 }
